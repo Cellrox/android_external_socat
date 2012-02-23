@@ -19,6 +19,7 @@ union xioin6_u {
 union sockaddr_union {
    struct sockaddr soa;
 #if WITH_UNIX
+#include <sys/un.h>
    struct sockaddr_un un;
 #endif /* WITH_UNIX */
 #if _WITH_IP4

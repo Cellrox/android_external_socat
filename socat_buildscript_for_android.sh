@@ -36,8 +36,7 @@ cd ${OUT}
 ${ROOT}/configure \
  --host \
  --disable-openssl \
- --disable-unix \
- CC="${OUT}/toolchain/bin/arm-linux-androideabi-gcc" \
+  CC="${OUT}/toolchain/bin/arm-linux-androideabi-gcc" \
  || exit 1
 
 # Replace misconfigured values in config.h

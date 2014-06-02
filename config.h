@@ -115,22 +115,22 @@
 #define HAVE_SIGACTION 1
 
 /* Define if you have the stat64 function */
-/* #undef HAVE_STAT64 */
+#define HAVE_STAT64 1
 
 /* Define if you have the fstat64 function */
-/* #undef HAVE_FSTAT64 */
+#define HAVE_FSTAT64 1
 
 /* Define if you have the lstat64 function */
-/* #undef HAVE_LSTAT64 */
+#define HAVE_LSTAT64 1
 
 /* Define if you have the lseek64 function */
 #define HAVE_LSEEK64 1
 
 /* Define if you have the truncate64 function */
-/* #undef HAVE_TRUNCATE64 */
+#define HAVE_TRUNCATE64 1
 
 /* Define if you have the ftruncate64 function */
-/* #undef HAVE_FTRUNCATE64 */
+#define HAVE_FTRUNCATE64 1
 
 /* Define if you have the strtoll function */
 #define HAVE_STRTOLL 1
@@ -199,7 +199,7 @@
 #define HAVE_NETDB_H 1
 
 /* Define if you have the <sys/un.h> header file.  */
-/* #undef HAVE_SYS_UN_H */
+#define HAVE_SYS_UN_H 1
 
 /* Define if you have the <pty.h> header file.  */
 /* #undef HAVE_PTY_H */
@@ -235,7 +235,7 @@
 #define HAVE_NET_IF_H 1
 
 /* Define if you have the <net/if_dl.h> header file.  */
-#define HAVE_NET_IF_DL_H 1
+/* #undef HAVE_NET_IF_DL_H */
 
 /* Define if you have the <linux/types.h> header file.  */
 #define HAVE_LINUX_TYPES_H 1
@@ -274,7 +274,7 @@
 /* #undef HAVE_SYS_STROPTS_H */
 
 /* Define if you have the <regex.h> header file. */
-/* #undef HAVE_REGEX_H */
+#define HAVE_REGEX_H 1
 
 /* Define if you have the <linux/fs.h> header file. */
 #define HAVE_LINUX_FS_H 1
@@ -292,10 +292,10 @@
 /* #undef HAVE_LIBREADLINE */
 
 /* Define if you have the m library (-lm).  */
-/* #undef HAVE_LIBM */
+#define HAVE_LIBM 1
 
 /* Define if you have the floor function */
-/* #undef HAVE_FLOOR */
+#define HAVE_FLOOR 1
 
 /* some platforms need _XOPEN_EXTENDED_SOURCE to get syslog headers (AIX4.1) */
 /* #undef _XOPEN_EXTENDED_SOURCE */
@@ -387,10 +387,10 @@
 #define HAVE_UNSETENV 1
 
 /* Define if you have the SSLv2_client_method function. not in new openssl */
-/* #undef HAVE_SSLv2_client_method */
+#define HAVE_SSLv2_client_method 1
 
 /* Define if you have the SSLv2_server_method function. not in new openssl */
-/* #undef HAVE_SSLv2_server_method */
+#define HAVE_SSLv2_server_method 1
 
 /* Define if you have the flock function */
 #define HAVE_FLOCK 1
@@ -511,7 +511,7 @@
 #define WITH_UNIX 1
 #define WITH_ABSTRACT_UNIXSOCKET 1
 #define WITH_IP4 1
-/* #undef WITH_IP6 */
+#define WITH_IP6 1
 #define WITH_RAWIP 1
 #define WITH_GENERICSOCKET 1
 #define WITH_INTERFACE 1
@@ -528,7 +528,7 @@
 #define WITH_TUN 1
 #define WITH_PTY 1
 #define WITH_EXT2 1
-/* #undef WITH_OPENSSL */
+#define WITH_OPENSSL 1
 #define WITH_STREAMS 1
 /* #undef WITH_FIPS */
 /* #undef OPENSSL_FIPS */

@@ -17,7 +17,11 @@ LOCAL_SRC_FILES:=                                      \
 	xio-ascii.c xiolockfile.c xio-tcpwrap.c xio-ext2.c xio-tun.c socat.c \
         error.c dalan.c procan.c procan-cdefs.c hostan.c fdname.c sysutils.c utils.c nestlex.c filan.c sycls.c sslcls.c
 
-LOCAL_MODULE:= socat
+LOCAL_C_INCLUDES += external/openssl/include
+
+LOCAL_SHARED_LIBRARIES += libssl libcrypto
+
+LOCAL_MODULE := socat
 
 LOCAL_MODULE_TAGS := eng
 

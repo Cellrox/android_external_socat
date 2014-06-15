@@ -21,7 +21,7 @@
 # hosts, and for debugging.
 
 ignore_change_params() {
-	return #Empty
+	add_ignore_change I236245e6f7c0301494e92d2d9fe9b79cefad0110 # Legal: Add a NOTICE symlink
 }
 
 

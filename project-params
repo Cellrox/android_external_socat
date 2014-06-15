@@ -1,0 +1,54 @@
+#!/bin/bash
+
+###############################################################################
+#
+# This file is intended to be sourced by other scripts, not to be executed
+# on its own.
+#
+###############################################################################
+
+
+###############################################################################
+# Changes to ignore when determining whether this repo project is changed.
+#
+# Add ignore changes by using the add_ignore_change() function.
+# Its parameters:
+# 1- Gerrit change-id (or pseudo change-id provided by cellrox-git-log.sh)
+#    to ignore
+#
+# GUIDELINE:
+# Ignore changes done for our build only, for supporting non-standard build
+# hosts, and for debugging.
+
+ignore_change_params() {
+	return #Empty
+}
+
+
+###############################################################################
+# Changes to provide to OEMs as patches.
+#
+# Add patch changes by using the add_patch_change() function.
+# Its parameters:
+# 1- Gerrit change-id (or pseudo change-id provided by cellrox-git-log.sh)
+#    to provide as a patch
+# 2- OPTIONAL change comment
+#
+# Add all changes as a patch by using the add_patch_all_changes() function.
+# Its parameters: none.
+#
+# Set a project comment by using the set_project_comment() function.
+# Its parameters:
+# 1- Comment text
+#
+# GUIDELINE:
+# Patch changes we intend to provide to our OEMs as code patches, whether to
+# be used directly or as an example.
+
+patch_change_params() {
+	add_patch_change I928b935babe16a342754b32407a871cc889806b1 # tweak config to make things build on kitkat
+	add_patch_change I1142d05abde5831f59bb598e9aa9f2ecb5c749ac # Make socat compile on android
+	add_patch_change commit_0f34a605784fe61f347f1894e71330f5690d7d71 # socat 1.7.2.0 sources
+	add_patch_change commit_446f6d2aa7e39d150820c687649c3a58af14ea3c # remove dummy file
+	add_patch_change commit_ce271c5fc760ea18c0681c0c07963dca07422632 # initial commit
+}
